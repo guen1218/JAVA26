@@ -1,0 +1,9 @@
+package homework;
+
+public class Question5 {
+public static void main(String[] args) {
+	char c = 'c';
+	c -= 32;
+	System.out.println(c);
+}
+}

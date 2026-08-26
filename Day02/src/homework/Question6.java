@@ -1,0 +1,12 @@
+package homework;
+
+public class Question6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double f = 200;
+		double c = 5.0/9.0*(f-32);
+		System.out.println(c);
+	}
+
+}
