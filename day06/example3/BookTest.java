@@ -9,10 +9,19 @@ public class BookTest {
 		for(Book bb : books) {
 			System.out.println(bb);
 		}
-		Arrays.sort(books);
+		
+		int new_neo_books[] = new int[books.length];
+		for(int i=0; i<books.length; i++) {
+			new_neo_books[i] = books[i].getPrice();
+		}
+		Arrays.sort(new_neo_books);
+		
 		System.out.printf("\n정렬 후\n");
-		for(Book bb : books) {
-			System.out.println(bb);
+		for(int nnb : new_neo_books) {
+			for(Book bb : books) {
+				if(bb.getPrice() == nnb)
+					System.out.println(bb);
+			}
 		}
 	}	
 }
