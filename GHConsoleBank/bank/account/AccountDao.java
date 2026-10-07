@@ -3,10 +3,10 @@ package bank.account;
 import java.util.List;
 
 public interface AccountDao {
-	boolean save(Account m);
+	boolean save(Account a);
 	List<Account> findAll();
 	List<Account> findByMemberId(String id);
 	Account findByNo(int no);
-	boolean update(Account m);
-	boolean delete(Account m);
+	boolean update(Account a);
+	boolean delete(Account a);
 }
