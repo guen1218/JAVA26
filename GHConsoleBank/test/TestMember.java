@@ -15,7 +15,7 @@ public class TestMember {
 	}
 	
 	public static void testMemberDao() {
-		MemberDao mdao = new MemberListDao();
+		MemberDao mdao = new MemberOracleDao();
 		MemberService ms = new GHMemberService(new MemberOracleDao());
 		// 회원 추가
 		System.out.println(">>회원 추가 및 회원 목");
