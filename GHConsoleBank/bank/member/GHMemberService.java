@@ -15,7 +15,7 @@ public class GHMemberService implements MemberService, AuthService{
 	public GHMemberService(MemberDao dao) {
 		super();
 		this.dao = dao;
-		this.dao.save(new Member(ADMIN_ID, ADMIN_PWD, ADMIN_ID, null, null, Member.ADMIN));
+//		this.dao.save(new Member(ADMIN_ID, ADMIN_PWD, ADMIN_ID, null, null, Member.ADMIN));
 	}
 
 	@Override
