@@ -5,7 +5,7 @@ import java.util.List;
 import bank.member.GHMemberService;
 import bank.member.Member;
 import bank.member.MemberDao;
-import bank.member.MemberListDao;
+import bank.member.MemberMapDao;
 import bank.member.MemberOracleDao;
 import bank.member.MemberService;
 
@@ -15,8 +15,8 @@ public class TestMember {
 	}
 	
 	public static void testMemberDao() {
-		MemberDao mdao = new MemberOracleDao();
-		MemberService ms = new GHMemberService(new MemberOracleDao());
+		MemberDao mdao = new MemberMapDao();
+		MemberService ms = new GHMemberService(new MemberMapDao());
 		// 회원 추가
 		System.out.println(">>회원 추가 및 회원 목");
 		mdao.save(new Member("yar", "11", "김야르", null, null, Member.USER));
