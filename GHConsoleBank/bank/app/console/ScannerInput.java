@@ -13,7 +13,11 @@ public class ScannerInput {
 	public int readInt(String message) {
 		System.out.println(message);
 		String inStr = scanner.nextLine();
-		return Integer.parseInt(inStr);
+		try{
+			return Integer.parseInt(inStr);
+		} catch(NumberFormatException e) { 
+			return -1;
+		}
 	}
 	
 	public boolean readYesNo(String message) {
